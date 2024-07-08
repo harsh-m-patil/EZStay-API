@@ -1,4 +1,3 @@
-// TODO: Implement controllers
 const Hotel = require("../models/hotel")
 
 exports.getAllHotels = async (req, res) => {
@@ -15,13 +14,22 @@ exports.getAllHotels = async (req, res) => {
       (match) => `$${match}`,
     )
 
-    const query = Hotel.find(JSON.parse(queryString))
+    let query = Hotel.find(JSON.parse(queryString))
+
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ")
+      query = query.sort(sortBy)
+    } else {
+      query.sort("-createdAt")
+    }
 
     const hotels = await query
     res.status(200).json({
       status: "status",
       results: hotels.length,
-      hotels: hotels,
+      data: {
+        hotels: hotels,
+      },
     })
   } catch (error) {
     res.status(404).json({
@@ -30,27 +38,68 @@ exports.getAllHotels = async (req, res) => {
     })
   }
 }
-exports.getHotel = (req, res) => {
-  res.status(200).json({
-    status: "success",
-    data: {},
-  })
+exports.getHotel = async (req, res) => {
+  try {
+    const hotel = await Hotel.findById(req.params.id)
+    res.status(200).json({
+      status: "success",
+      data: {
+        hotel: hotel,
+      },
+    })
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      message: error,
+    })
+  }
 }
-exports.createHotel = (req, res) => {
-  res.status(200).json({
-    status: "success",
-    data: {},
-  })
+exports.createHotel = async (req, res) => {
+  try {
+    const newTour = await Hotel.create(req.body)
+    res.status(200).json({
+      status: "success",
+      data: {
+        tour: newTour,
+      },
+    })
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: error,
+    })
+  }
 }
-exports.updateHotel = (req, res) => {
-  res.status(200).json({
-    status: "success",
-    data: {},
-  })
+exports.updateHotel = async (req, res) => {
+  try {
+    const updatedTour = await Hotel.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    })
+    res.status(200).json({
+      status: "success",
+      data: {
+        tour: updatedTour,
+      },
+    })
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: error,
+    })
+  }
 }
-exports.deleteHotel = (req, res) => {
-  res.status(204).json({
-    status: "success",
-    data: null,
-  })
+exports.deleteHotel = async (req, res) => {
+  try {
+    await Hotel.findByIdAndDelete(req.params.id)
+    res.status(204).json({
+      status: "success",
+      data: null,
+    })
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: error,
+    })
+  }
 }
