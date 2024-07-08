@@ -1,0 +1,165 @@
+[
+  {
+    "name": "Hamill, Carroll and Cronin",
+    "location": {
+      "address": "909 Schmeler Burg",
+      "city": "Rancho Cucamonga",
+      "state": "Utah",
+      "pincode": "654623"
+    },
+    "amenities": ["Spa", "Gym", "Restaurant"],
+    "description": "Cohaero decumbo doloribus vulnus sit voluptate colo vitium. Tabernus abutor synagoga. Abeo usitas carus enim amicitia defendo audio cur suppono alo.",
+    "images": [
+      "https://picsum.photos/seed/GSn54NKF82/640/480",
+      "https://picsum.photos/seed/oCMJvfynQq/640/480"
+    ],
+    "ratingsAverage": 3.2,
+    "numReviews": 568
+  },
+  {
+    "name": "Miller LLC",
+    "location": {
+      "address": "613 W State Street",
+      "city": "Fort Ronaldofield",
+      "state": "Michigan",
+      "pincode": "695116"
+    },
+    "amenities": ["Pool"],
+    "description": "Cornu voluptate praesentium sustineo. Aeternus statim adicio quisquam celebrer vulpes capitulus. Tabula illum uberrime.",
+    "images": ["https://loremflickr.com/640/480?lock=1925741495189504"],
+    "ratingsAverage": 3,
+    "numReviews": 765
+  },
+  {
+    "name": "Russel - Fay",
+    "location": {
+      "address": "983 Gorczany Summit",
+      "city": "South Kaylinport",
+      "state": "South Carolina",
+      "pincode": "091076"
+    },
+    "amenities": ["Restaurant", "Pool", "Spa"],
+    "description": "Certus acies ultra cursus confido ustulo civitas cornu avarus sordeo. Spectaculum cetera agnitio aveho ipsam argentum suadeo argumentum veritas voluntarius. Causa molestias terga cogito.",
+    "images": ["https://picsum.photos/seed/TYeR7qix/640/480"],
+    "ratingsAverage": 4.1,
+    "numReviews": 9
+  },
+  {
+    "name": "Mohr and Sons",
+    "location": {
+      "address": "28008 Yasmeen Ranch",
+      "city": "New George",
+      "state": "New York",
+      "pincode": "648905"
+    },
+    "amenities": ["Free WiFi", "Gym"],
+    "description": "Appono altus denique teres comburo odio colligo uter. Deleniti charisma quam vulticulus ara stips triduana appono votum. Colligo tabernus delinquo spes conspergo crudelis.",
+    "images": [
+      "https://picsum.photos/seed/OazEfQTTb/640/480",
+      "https://picsum.photos/seed/0fy3uFHs/640/480"
+    ],
+    "ratingsAverage": 3.9,
+    "numReviews": 181
+  },
+  {
+    "name": "Connelly, Kilback and MacGyver",
+    "location": {
+      "address": "7577 Wanda Rest",
+      "city": "Glenview",
+      "state": "North Dakota",
+      "pincode": "328702"
+    },
+    "amenities": ["Free WiFi", "Gym", "Restaurant", "Pool", "Spa"],
+    "description": "Audentia supra suus cedo depopulo vigor conitor incidunt. Odio videlicet conturbo sequi tenuis constans tero. Cohibeo sint nam spero iusto angustus.",
+    "images": [
+      "https://loremflickr.com/640/480?lock=3622699664408576",
+      "https://loremflickr.com/640/480?lock=5398358508175360",
+      "https://loremflickr.com/640/480?lock=4080582036291584",
+      "https://loremflickr.com/640/480?lock=4959853455867904",
+      "https://loremflickr.com/640/480?lock=7991065327960064"
+    ],
+    "ratingsAverage": 4.9,
+    "numReviews": 311
+  },
+  {
+    "name": "Koepp and Sons",
+    "location": {
+      "address": "6926 Marquardt Burg",
+      "city": "Hattiesburg",
+      "state": "Oklahoma",
+      "pincode": "142153"
+    },
+    "amenities": ["Restaurant", "Free WiFi", "Pool", "Spa", "Gym"],
+    "description": "Fuga sit ater repellendus solum thema neque. Ulciscor tracto claudeo. Umbra currus damno cado sophismata.",
+    "images": [
+      "https://picsum.photos/seed/6QbVlayr/640/480",
+      "https://picsum.photos/seed/F9Zg8/640/480"
+    ],
+    "ratingsAverage": 4.8,
+    "numReviews": 130
+  },
+  {
+    "name": "Romaguera, Huels and Abshire",
+    "location": {
+      "address": "39544 Braden Estates",
+      "city": "Moorechester",
+      "state": "Kansas",
+      "pincode": "459925"
+    },
+    "amenities": ["Free WiFi", "Spa"],
+    "description": "Uredo rem voluntarius sumptus clarus ascit. Cariosus tenuis articulus maiores desipio totus bonus. Terebro speculum tardus timidus tamen voveo.",
+    "images": [
+      "https://loremflickr.com/640/480?lock=4870455049584640",
+      "https://loremflickr.com/640/480?lock=7601662403280896",
+      "https://picsum.photos/seed/ZFBo3aK/640/480"
+    ],
+    "ratingsAverage": 4.3,
+    "numReviews": 338
+  },
+  {
+    "name": "Fay - Nolan",
+    "location": {
+      "address": "250 River Road",
+      "city": "Johnson City",
+      "state": "Utah",
+      "pincode": "161588"
+    },
+    "amenities": ["Spa", "Free WiFi", "Gym", "Pool", "Restaurant"],
+    "description": "Vigor terror tardus amaritudo conicio amplexus fugiat viscus deprecator. Amo crastinus video tergum. Angelus valeo capillus candidus.",
+    "images": ["https://loremflickr.com/640/480?lock=6579493103730688"],
+    "ratingsAverage": 3.8,
+    "numReviews": 828
+  },
+  {
+    "name": "Yost - Schiller",
+    "location": {
+      "address": "26810 Malachi Hill",
+      "city": "Freddyborough",
+      "state": "Alaska",
+      "pincode": "557552"
+    },
+    "amenities": ["Free WiFi", "Restaurant", "Pool", "Spa"],
+    "description": "Commemoro ipsam dolorum coaegresco voluptatibus defetiscor aeger tracto paulatim tergo. Tergiversatio accusamus urbs commodo defetiscor suspendo tonsor vulariter utilis. Deprecator velit villa vereor celo ipsum tabesco synagoga caelestis.",
+    "images": [
+      "https://picsum.photos/seed/1VzstMVVT/640/480",
+      "https://picsum.photos/seed/BpW2ry/640/480",
+      "https://loremflickr.com/640/480?lock=2517105815584768"
+    ],
+    "ratingsAverage": 4.8,
+    "numReviews": 831
+  },
+  {
+    "name": "Bins, Lind and Jaskolski",
+    "location": {
+      "address": "66158 Adolfo Viaduct",
+      "city": "East Rosemarietown",
+      "state": "New York",
+      "pincode": "440108"
+    },
+    "amenities": ["Pool"],
+    "description": "Arbor canto placeat reprehenderit vilitas adsidue pariatur amita ab. Aeger allatus absum in combibo umbra canto error. Claustrum solus tabesco ulterius curriculum.",
+    "images": ["https://picsum.photos/seed/yhP3nHPX5/640/480"],
+    "ratingsAverage": 3.8,
+    "numReviews": 427
+  }
+]
