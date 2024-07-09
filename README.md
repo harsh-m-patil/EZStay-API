@@ -71,8 +71,15 @@ curl -sS -X DELETE 'localhost:3000/api/v1/hotels/668bdc727c822830900c7827' | jq
 
 ```bash
 # can use other fields instead of ratingsAverage
-curl -sS 'localhost:3000/api/v1/hotels?ratingsAverage=3.2' | jq
 # add more fields to url by separating with &
+curl -sS 'localhost:3000/api/v1/hotels?ratingsAverage=3.2' | jq
+```
+
+- Equality operators
+
+```bash
+# can use gt,gte,lt,lte
+curl -sS 'localhost:3000/api/v1/hotels?ratingsAverage[gte]=3.2' | jq
 ```
 
 - Sort hotels by fields

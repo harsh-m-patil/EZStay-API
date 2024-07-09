@@ -1,29 +1,12 @@
 const Hotel = require("../models/hotel")
+const APIFeatures = require("../utils/apiFeatures")
 
 exports.getAllHotels = async (req, res) => {
   try {
-    // basic filtering name=Name
-    const queryObj = { ...req.query }
-    const excludedFields = ["page", "sort", "limit", "fields"]
-    excludedFields.forEach((el) => delete queryObj[el])
+    const features = new APIFeatures(Hotel.find(), req.query).filter().sort()
 
-    // advanced filtering
-    let queryString = JSON.stringify(queryObj)
-    queryString = queryString.replace(
-      /\b(gte|gt|lte|lt)\b/g,
-      (match) => `$${match}`,
-    )
+    const hotels = await features.query
 
-    let query = Hotel.find(JSON.parse(queryString))
-
-    if (req.query.sort) {
-      const sortBy = req.query.sort.split(",").join(" ")
-      query = query.sort(sortBy)
-    } else {
-      query.sort("-createdAt")
-    }
-
-    const hotels = await query
     res.status(200).json({
       status: "status",
       results: hotels.length,
@@ -38,6 +21,7 @@ exports.getAllHotels = async (req, res) => {
     })
   }
 }
+
 exports.getHotel = async (req, res) => {
   try {
     const hotel = await Hotel.findById(req.params.id)
