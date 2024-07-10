@@ -3,12 +3,16 @@ const APIFeatures = require("../utils/apiFeatures")
 
 exports.getAllHotels = async (req, res) => {
   try {
-    const features = new APIFeatures(Hotel.find(), req.query).filter().sort()
+    const features = new APIFeatures(Hotel.find(), req.query)
+      .filter()
+      .sort()
+      .limitFields()
+      .paginate()
 
     const hotels = await features.query
 
     res.status(200).json({
-      status: "status",
+      status: "success",
       results: hotels.length,
       data: {
         hotels: hotels,
