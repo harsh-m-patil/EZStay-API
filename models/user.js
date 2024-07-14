@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 const validator = require("validator")
+const bcrypt = require("bcrypt")
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -20,6 +21,11 @@ const userSchema = new mongoose.Schema({
     required: [true, "Please provide a password"],
     minlength: [8, "Password should of minimum 8 characters"],
   },
+})
+
+userSchema.pre("save", async function (next) {
+  this.password = await bcrypt.hash(this.password, 10)
+  next()
 })
 
 const User = mongoose.model("User", userSchema)
